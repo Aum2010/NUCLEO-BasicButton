@@ -1,0 +1,26 @@
+--cpu Cortex-M7.fp.dp
+"basicbutton\startup_stm32f767xx.o"
+"basicbutton\main.o"
+"basicbutton\stm32f7xx_it.o"
+"basicbutton\stm32f7xx_hal_msp.o"
+"basicbutton\stm32f7xx_hal_cortex.o"
+"basicbutton\stm32f7xx_hal_tim.o"
+"basicbutton\stm32f7xx_hal_tim_ex.o"
+"basicbutton\stm32f7xx_hal_rcc.o"
+"basicbutton\stm32f7xx_hal_rcc_ex.o"
+"basicbutton\stm32f7xx_hal_flash.o"
+"basicbutton\stm32f7xx_hal_flash_ex.o"
+"basicbutton\stm32f7xx_hal_gpio.o"
+"basicbutton\stm32f7xx_hal_dma.o"
+"basicbutton\stm32f7xx_hal_dma_ex.o"
+"basicbutton\stm32f7xx_hal_pwr.o"
+"basicbutton\stm32f7xx_hal_pwr_ex.o"
+"basicbutton\stm32f7xx_hal.o"
+"basicbutton\stm32f7xx_hal_i2c.o"
+"basicbutton\stm32f7xx_hal_i2c_ex.o"
+"basicbutton\stm32f7xx_hal_exti.o"
+"basicbutton\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "BasicButton\BasicButton.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BasicButton.map" -o BasicButton\BasicButton.axf
